@@ -3,14 +3,18 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f4f4f4;
     line-height: 1.6;
+}
+h1 {
+    text-decoration: underline;
 }
 
 header {
     background-color: #333;
     color: white;
-    padding: 20px;
     text-align: center;
+    padding: 20px;
 }
 
 nav ul {
@@ -20,17 +24,29 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin-right: 20px;
+    margin: 0 10px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
 }
 
 section {
     padding: 20px;
     margin: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #333;
 }
 
 footer {
@@ -39,6 +55,24 @@ footer {
     text-align: center;
     padding: 10px;
     position: fixed;
-    bottom: 0;
     width: 100%;
+    bottom: 0;
+}
+
+/* Media Queries for Mobile Devices */
+@media only screen and (max-width: 600px) {
+    header, footer {
+        padding: 10px;
+    }
+
+    nav ul li {
+        display: block;
+        text-align: center;
+        margin: 5px 0;
+    }
+
+    section {
+        padding: 10px;
+        margin: 10px;
+    }
 }

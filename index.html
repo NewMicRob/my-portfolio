@@ -38,12 +38,39 @@
     <section id="projects">
         <h2>My Projects</h2>
         <p>This is a placeholder for your projects. In future chapters, you’ll add real projects here.</p>
+        <div class="container">
+        <button class="button" type="button" id="project1" value=""></button>
+        <button class="button" type="button" id="project2" value=""></button>
+        <button class="button" type="button" id="project3"value=""></button>
+        <button class="button" type="button" id="project4" value=""></button>
+        </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact">
         <h2>Contact Me</h2>
         <p>In the future, this will be a contact form. For now, just leave this as a placeholder.</p>
+        <form>
+            <label for="fname">First Name:</label> 
+            <input type="text" id="fname" name="fname">
+
+            <label for="lname">Last Name:</label> 
+            <input type="text" id="lname" name="lname">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="example@email.com" required>
+
+            <label for="phoneNumber">Phone #:</label>
+            <input type="number" name="phoneNumber" id="phoneNumber" placeholder="(888) 888 - 8888">
+
+
+            <label for="messagebox">Message</label>
+            <input type="textarea" id="messagebox" placeholder="Type message here" required>
+
+
+            <button class="submit" type="submit" id="submit">Submit</button>
+            <button class="clear" type="clear" id="clear">Clear</button>
+        </form>
     </section>
 
     <!-- Footer Section -->

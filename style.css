@@ -76,3 +76,109 @@ footer {
         margin: 10px;
     }
 }
+
+.container {
+    text-align: center;
+}
+
+.button {
+    background-color: white;
+    border: green;
+    color: black;
+    padding: 15px;
+    display: inline-block;
+    text-align: center;
+    font-size: 24px;
+    cursor: pointer;
+    border: 3px solid rgb(38, 185, 38);
+    margin: auto;
+    height: auto;
+    min-width: none;
+    width: 250px;
+    box-shadow: 5px 5px 10px lightslategray;
+}
+
+
+/*Button for project1*/
+#project1.button:hover {
+    transition-duration: o.4s;
+    background-color: rgb(38, 185, 38);
+    color: white;
+}
+
+#project1.button:active {
+    box-shadow: 3px 3px 3px gray ;
+    transform: translateY(4px);
+}
+
+#project1.button::after {
+    content: "Project One";
+}
+
+#project1.button:hover::after {
+    content: "Show Details";
+}
+
+
+/*Button for project2*/
+#project2.button:hover {
+    transition-duration: o.4s;
+    background-color: rgb(38, 185, 38);
+    color: white;
+}
+
+#project2.button:active {
+    box-shadow: 3px 3px 3px gray ;
+    transform: translateY(4px);
+}
+
+#project2.button::after {
+    content: "Project Two";
+}
+
+#project2.button:hover::after {
+    content: "Show Details";
+}
+
+
+/*Button for project3*/
+#project3.button:hover {
+    transition-duration: o.4s;
+    background-color: rgb(38, 185, 38);
+    color: white;
+}
+
+#project3.button:active {
+    box-shadow: 3px 3px 3px gray ;
+    transform: translateY(4px);
+}
+
+#project3.button::after {
+    content: "Project Three";
+}
+
+#project3.button:hover::after {
+    content: "Show Details";
+}
+
+
+/*Button 4 project4*/
+#project4.button:hover {
+    transition-duration: o.4s;
+    background-color: rgb(38, 185, 38);
+    color: white;
+}
+
+#project4.button:active {
+    box-shadow: 3px 3px 3px gray ;
+    transform: translateY(4px);
+}
+
+#project4.button::after {
+    content: "Project Four";
+}
+
+#project4.button:hover::after {
+    content: "Show Details";
+}
+

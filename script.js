@@ -4,7 +4,7 @@ const project1btn = document.getElementById("project1");
 })
 
 const project2btn = document.getElementById("project2");
-    project12btn.addEventListener("click", function() {
+    project2btn.addEventListener("click", function() {
         alert("More Details");
 })
 

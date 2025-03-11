@@ -45,7 +45,6 @@ section {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
 h2 {
     color: #333;
 }
@@ -79,12 +78,23 @@ footer {
 }
 
 .container {
-    display: block;
+    display: flex;
     text-align: center;
     padding: auto;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    position: relative;
     }
 
+    .subContainer{
+        position: absolute;
+        display: inline-block;
+        text-align: center;
+        justify-content: space-between;
+        top: 70px;
+        min-width: 100%;
+        background-color: white;
+        border-radius: 5px;
+    }
 
 /*Button for project1*/
 #project1.button {
@@ -101,7 +111,7 @@ footer {
     height: auto;
     min-width: none;
     width: 250px;
-    box-shadow: 5px 5px 10px lightslategray;
+    box-shadow: 3px 3px 3px rgb(69, 69, 69);
 }
 
 #project1.button:hover {
@@ -111,7 +121,7 @@ footer {
 }
 
 #project1.button:active {
-    box-shadow: 3px 3px 3px gray ;
+    box-shadow: 3px 3px 3px black ;
     transform: translateY(4px);
 }
 
@@ -124,7 +134,6 @@ footer {
     content: "Show Details";
     text-decoration: underline;
 }
-
 
 /*Button for project2*/
 #project2.button {
@@ -141,7 +150,7 @@ footer {
     height: auto;
     min-width: none;
     width: 250px;
-    box-shadow: 5px 5px 10px lightslategray;
+    box-shadow: 3px 3px 3px rgb(69, 69, 69);;
 }
 
 #project2.button:hover {
@@ -151,7 +160,7 @@ footer {
 }
 
 #project2.button:active {
-    box-shadow: 3px 3px 3px gray ;
+    box-shadow: 3px 3px 3px black ;
     transform: translateY(4px);
 }
 
@@ -164,7 +173,6 @@ footer {
     content: "Show Details";
     text-decoration: underline;
 }
-
 
 /*Button for project3*/
 #project3.button {
@@ -181,7 +189,7 @@ footer {
     height: auto;
     min-width: none;
     width: 250px;
-    box-shadow: 5px 5px 10px lightslategray;
+    box-shadow: 3px 3px 3px rgb(69, 69, 69);;
 }
 
 #project3.button:hover {
@@ -191,7 +199,7 @@ footer {
 }
 
 #project3.button:active {
-    box-shadow: 3px 3px 3px gray ;
+    box-shadow: 3px 3px 3px black;
     transform: translateY(4px);
 }
 
@@ -220,7 +228,7 @@ footer {
     height: auto;
     min-width: none;
     width: 250px;
-    box-shadow: 5px 5px 10px lightslategray;
+    box-shadow: 3px 3px 3px rgb(69, 69, 69);;
 }
 
 #project4.button:hover {
@@ -230,7 +238,7 @@ footer {
 }
 
 #project4.button:active {
-    box-shadow: 3px 3px 3px gray ;
+    box-shadow: 3px 3px 5px black;
     transform: translateY(4px);
 }
 
@@ -250,12 +258,14 @@ p {
 
 form {
     text-align: center;
-    background-color: aqua;
+    background-color: rgb(38, 185, 38);
     margin: auto;
     padding: 25px;
-    width: 60%;
+    width: 40%;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
+    box-shadow: 5px 5px 5px rgb(69, 69, 69);
+    border-radius: 10px;
 }
 
 h3 {
@@ -265,40 +275,59 @@ h3 {
 }
 
 .submit {
-    background-color: orange;
+    background-color: whitesmoke;
+    font-weight: bold;
     width: 70px;
     border: none;
     padding: 10px;
     margin: 5px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px rgb(69, 69, 69);
 }
 
 .submit:hover{
-    background-color: rgb(89, 209, 123);
+    background-color: lightgray;
+    font-weight: bold;
     padding: 10px;
     text-align: center;
+    box-shadow: 3px 3px 5px rgb(69, 69, 69);
 }
 
 
 .reset {
-    background-color: orange;
+    background-color: whitesmoke;
+    font-weight: bold;
     width: 70px;
     border: none;
     padding: 10px;
     margin: 5px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px rgb(69, 69, 69) ;
 }
 
 .reset:hover {
-    background-color: green;
+    background-color: lightgray;
+    font-weight: bold;
     padding: 10px;
     margin: 5px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px rgb(69, 69, 69);
+}
+
+.tel {
+    width: 100px;
 }
 
 textarea {
-    width: 350px;
+    width: 100%;
     height: 150px;
     padding: 12px;
     box-sizing: border-box;
     border: 2px solid black;
-    border-radius: 5px;
+    border-radius: 10px;
     resize: none;
+    box-shadow: 2px 2px 3px rgb(69, 69, 69);
+}
+input.text {
+    box-shadow: 2px 2px 3px rgb(69, 69, 69);
 }

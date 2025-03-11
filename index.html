@@ -35,6 +35,7 @@
     </section>
     
     <!-- Projects Section -->
+
     <section id="projects">
     
         <h2>My Projects</h2>
@@ -44,24 +45,30 @@
         <div class="container">
             
             <button class="button" type="button" id="project1" name="proj" value=""></button>
-            <div id="p1info" style="display:none;">
-                This is reserved for information on project 1.
-            </div>
+            
             <button class="button" type="button" id="project2" name="proj" value=""></button>
-            <div id="p2info" style="display:none;">
-                This is reserved for information on project 2.
-            </div>
+            
             <button class="button" type="button" id="project3" name="proj" value=""></button>
-            <div id="p3info" style="display:none;">
-                This is reserved for information on project 3.
-            </div>
+            
             <button class="button" type="button" id="project4" name="proj" value=""></button>
-            <div id="p4info" style="display:none;">
-                This is reserved for information on project 4.
+            
+            
+            <div class="subContainer">
+                <div id="p1info" style="display:none;">
+                    <textarea readonly>This is reserved for information on project 1.</textarea>
+                </div>
+                <div id="p2info" style="display:none;">
+                    <textarea readonly> This is reserved for information on project 2.</textarea>
+                </div>
+                <div id="p3info" style="display:none;">
+                    <textarea readonly>This is reserved for information on project 3.</textarea>
+                </div>
+                <div id="p4info" style="display:none;">
+                    <textarea readonly>This is reserved for information on project 4.</textarea>
+                </div>
             </div>
     
     </section>
-    
     <!-- Contact Section -->
     <section id="contact">
         
@@ -70,49 +77,52 @@
         <p>In the future, this will be a contact form. For now, just leave this as a placeholder.</p>
         
         <div class="form">
-        <form>
+        <form name="form" onsubmit="return validateForm()">
             <h3>Please fill in form</h3>
             <label for="mr">Mr.</label>
-            <input type="radio" id="honorific" name="honorific" class="checkmark" required>
+            <input type="radio" id="honorific" name="honorific" class="checkmark">
             
             <label for="mrs">Mrs.</label>
-            <input type="radio" id="honorific" name="honorific" class="checkmark" required>
-            
+            <input type="radio" id="honorific" name="honorific" class="checkmark">
+            <br>
             <label for="other">Other</label>
-            <input type="radio" id="honorific" name="honorific" class="checkmark" required>
-            
-            <label for="na">Prefer not to answer</label>
-            <input type="radio" id="honorific" name="honorific" class="checkmark" required>
+            <input type="radio" id="honorific" name="honorific" class="checkmark">
+            <br>
+            <label for="na">NA</label>
+            <input type="radio" id="honorific" name="honorific" class="checkmark">
             
             <br>
             <br>
             
-            <label for="fname">First Name:</label> 
-            <input type="text" id="fname" name="fname" required>
-            
-            <label for="lname">Last Name:</label> 
-            <input type="text" id="lname" name="lname" required>
-            
-            <br>
+            <label for="fName">*First Name:</label> 
+            <input type="text" class="text" id="fName" name="fName">
+
             <br>
             
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="example@email.com" required>
+            <label for="lName">*Last Name:</label> 
+            <input type="text" class="text" id="lName" name="lName"><br>
             
-            <label for="tel">Phone #:</label>
-            <input type="tel" class="tel" name="tel" id="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" size="3, 3, 4 placeholder="012 - 345 - 6789">
+            <br>
+            
+            <label for="email">*Email:</label>
+            <input type="email" class="text" id="email" name="email" placeholder="example@email.com"><br>
+            
+            
+
+            <label for="tel">*Phone:</label>
+            <input type="tel" class="text" name="tel" id="tel" placeholder="012 - 345 - 6789">
             
             <br>
             <br>
             
             <label for="messagebox">Message:</label>
             <br>
-            <textarea placeholder="Your message here..."></textarea>
+            <textarea id="message" placeholder="Your message here..."></textarea>
 
             <br>
             <br>
             
-            <button class="submit" type="submit" id="submit">Submit</button>
+            <input class="submit" value="Submit" type="submit" id="submit">
             <button class="reset" type="reset" id="reset">Clear</button>
             
         </form>

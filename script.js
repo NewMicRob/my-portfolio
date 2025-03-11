@@ -22,3 +22,15 @@ project4btn.addEventListener("click", function() {
     p4info.style.display = (p4info.style.display === "none") ? "block" : "none";
 });
 
+function validateForm() {
+    let form = document.forms["form"];
+    let fName = form["fName"].value;
+    let lName = form["lName"].value;
+    let email = form["email"].value;
+    let tel = form["tel"].value;
+    if (fName === "" || lName === "" || email === "" || tel === "") {
+        alert("Please fill in the * fields");
+        return false;
+    }
+    return true;
+}

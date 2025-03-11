@@ -19,86 +19,106 @@
             </ul>
         </nav>
     </header>
-
+    
     <!-- About Section -->
     <section id="about">
         <h2>About Me</h2>
         <p>My name is Michael, most people call me Mike. I am currently enrolled in the Computer Programming Course. I was born in Brampton and moved to Caledon when I was 5. I live in Caledon which is just to the North of Vaughan.
-
-
-
+            
+            
+            
             I am interested in gaming and tech in general. I spend most of my time reading books/ graphic novels (Between Two Fires and Solo Leveling), playing video games (currently playing Silent Hill 2 Remake), and watching TV shows/movies (Landman, and Alien Romulus). I have a black and white Boston terrier named Anna who is 7 years old.
             
             
             
             I went to Japan last month with my longtime girlfriend and her friends. We went for 10 days and had some amazing food/drinks(7-11 smoothies, shoyu ramen), visited some nice shrines/temples (Fushimi Inari Taisha, Todai-ji Temple, etc.) and went to 4 cities(Tokyo, Kyoto, Nara, Osaka). It was a great trip, the only downside was the 14 hr flight.</p>
     </section>
-
+    
     <!-- Projects Section -->
     <section id="projects">
-
+    
         <h2>My Projects</h2>
-
+        
         <p>This is a placeholder for your projects. In future chapters, you’ll add real projects here.</p>
-
+        
         <div class="container">
-
-            <button class="button" type="button" id="project1" value=""></button>
-
-            <button class="button" type="button" id="project2" value=""></button>
             
-            <button class="button" type="button" id="project3" value=""></button>
-            
-            <button class="button" type="button" id="project4" value=""></button>
-
-        </div>
-
+            <button class="button" type="button" id="project1" name="proj" value=""></button>
+            <div id="p1info" style="display:none;">
+                This is reserved for information on project 1.
+            </div>
+            <button class="button" type="button" id="project2" name="proj" value=""></button>
+            <div id="p2info" style="display:none;">
+                This is reserved for information on project 2.
+            </div>
+            <button class="button" type="button" id="project3" name="proj" value=""></button>
+            <div id="p3info" style="display:none;">
+                This is reserved for information on project 3.
+            </div>
+            <button class="button" type="button" id="project4" name="proj" value=""></button>
+            <div id="p4info" style="display:none;">
+                This is reserved for information on project 4.
+            </div>
+    
     </section>
-
+    
     <!-- Contact Section -->
     <section id="contact">
-
+        
         <h2>Contact Me</h2>
-
+        
         <p>In the future, this will be a contact form. For now, just leave this as a placeholder.</p>
-
+        
+        <div class="form">
         <form>
-
-            <label for="mr.">Mr.</label>
-            <input type="radio" id="mr." name="honorific" required>
-
-            <label for="mrs.">Mrs.</label>
-            <input type="radio" id="mrs." name="honorific" required>
-
+            <h3>Please fill in form</h3>
+            <label for="mr">Mr.</label>
+            <input type="radio" id="honorific" name="honorific" class="checkmark" required>
+            
+            <label for="mrs">Mrs.</label>
+            <input type="radio" id="honorific" name="honorific" class="checkmark" required>
+            
             <label for="other">Other</label>
-            <input type="radio" id="other" name="honorific" required>
-
+            <input type="radio" id="honorific" name="honorific" class="checkmark" required>
+            
             <label for="na">Prefer not to answer</label>
-            <input type="radio" id="na" name="honorific" required>
-
+            <input type="radio" id="honorific" name="honorific" class="checkmark" required>
+            
+            <br>
+            <br>
+            
             <label for="fname">First Name:</label> 
             <input type="text" id="fname" name="fname" required>
-
+            
             <label for="lname">Last Name:</label> 
             <input type="text" id="lname" name="lname" required>
-
+            
+            <br>
+            <br>
+            
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" placeholder="example@email.com" required>
-
+            
             <label for="tel">Phone #:</label>
             <input type="tel" class="tel" name="tel" id="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" size="3, 3, 4 placeholder="012 - 345 - 6789">
+            
+            <br>
+            <br>
+            
+            <label for="messagebox">Message:</label>
+            <br>
+            <textarea placeholder="Your message here..."></textarea>
 
-            <label for="messagebox">Message</label>
-            <input type="textarea" id="messagebox" placeholder="Type message here" required>
-
-
+            <br>
+            <br>
+            
             <button class="submit" type="submit" id="submit">Submit</button>
-            <button class="clear" type="clear" id="clear">Clear</button>
-
+            <button class="reset" type="reset" id="reset">Clear</button>
+            
         </form>
-        
+        </div>
     </section>
-
+    
     <!-- Footer Section -->
     <footer>
         <p>&copy; 2025 Michael R Newman</p>

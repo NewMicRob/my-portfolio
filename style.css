@@ -2,6 +2,7 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
+    margin-bottom: 100px;
     padding: 0;
     background-color: #f4f4f4;
     line-height: 1.6;
@@ -78,10 +79,15 @@ footer {
 }
 
 .container {
+    display: block;
     text-align: center;
-}
+    padding: auto;
+    justify-content: space-evenly;
+    }
 
-.button {
+
+/*Button for project1*/
+#project1.button {
     background-color: white;
     border: green;
     color: black;
@@ -98,8 +104,6 @@ footer {
     box-shadow: 5px 5px 10px lightslategray;
 }
 
-
-/*Button for project1*/
 #project1.button:hover {
     transition-duration: o.4s;
     background-color: rgb(38, 185, 38);
@@ -113,14 +117,33 @@ footer {
 
 #project1.button::after {
     content: "Project One";
+    text-decoration: underline;
 }
 
 #project1.button:hover::after {
     content: "Show Details";
+    text-decoration: underline;
 }
 
 
 /*Button for project2*/
+#project2.button {
+    background-color: white;
+    border: green;
+    color: black;
+    padding: 15px;
+    display: inline-block;
+    text-align: center;
+    font-size: 24px;
+    cursor: pointer;
+    border: 3px solid rgb(38, 185, 38);
+    margin: auto;
+    height: auto;
+    min-width: none;
+    width: 250px;
+    box-shadow: 5px 5px 10px lightslategray;
+}
+
 #project2.button:hover {
     transition-duration: o.4s;
     background-color: rgb(38, 185, 38);
@@ -134,14 +157,33 @@ footer {
 
 #project2.button::after {
     content: "Project Two";
+    text-decoration: underline;
 }
 
 #project2.button:hover::after {
     content: "Show Details";
+    text-decoration: underline;
 }
 
 
 /*Button for project3*/
+#project3.button {
+    background-color: white;
+    border: green;
+    color: black;
+    padding: 15px;
+    display: inline-block;
+    text-align: center;
+    font-size: 24px;
+    cursor: pointer;
+    border: 3px solid rgb(38, 185, 38);
+    margin: auto;
+    height: auto;
+    min-width: none;
+    width: 250px;
+    box-shadow: 5px 5px 10px lightslategray;
+}
+
 #project3.button:hover {
     transition-duration: o.4s;
     background-color: rgb(38, 185, 38);
@@ -155,13 +197,32 @@ footer {
 
 #project3.button::after {
     content: "Project Three";
+    text-decoration: underline;
 }
 
 #project3.button:hover::after {
     content: "Show Details";
+    text-decoration: underline;
 }
 
 /*Button 4 project4*/
+#project4.button {
+    background-color: white;
+    border: green;
+    color: black;
+    padding: 15px;
+    display: inline-block;
+    text-align: center;
+    font-size: 24px;
+    cursor: pointer;
+    border: 3px solid rgb(38, 185, 38);
+    margin: auto;
+    height: auto;
+    min-width: none;
+    width: 250px;
+    box-shadow: 5px 5px 10px lightslategray;
+}
+
 #project4.button:hover {
     transition-duration: o.4s;
     background-color: rgb(38, 185, 38);
@@ -175,9 +236,69 @@ footer {
 
 #project4.button::after {
     content: "Project Four";
+    text-decoration: underline;
 }
 
 #project4.button:hover::after {
     content: "Show Details";
+    text-decoration: underline;
 }
 
+p {
+    text-align: center;
+} 
+
+form {
+    text-align: center;
+    background-color: aqua;
+    margin: auto;
+    padding: 25px;
+    width: 60%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+h3 {
+    text-decoration: underline;
+    font-weight: bolder;
+    padding-bottom: 10px;
+}
+
+.submit {
+    background-color: orange;
+    width: 70px;
+    border: none;
+    padding: 10px;
+    margin: 5px;
+}
+
+.submit:hover{
+    background-color: rgb(89, 209, 123);
+    padding: 10px;
+    text-align: center;
+}
+
+
+.reset {
+    background-color: orange;
+    width: 70px;
+    border: none;
+    padding: 10px;
+    margin: 5px;
+}
+
+.reset:hover {
+    background-color: green;
+    padding: 10px;
+    margin: 5px;
+}
+
+textarea {
+    width: 350px;
+    height: 150px;
+    padding: 12px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 5px;
+    resize: none;
+}

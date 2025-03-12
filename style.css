@@ -90,7 +90,7 @@ footer {
         display: inline-block;
         text-align: center;
         justify-content: space-between;
-        top: 70px;
+        top: 100%;
         min-width: 100%;
         background-color: white;
         border-radius: 5px;
@@ -319,7 +319,7 @@ h3 {
 }
 
 textarea {
-    width: 100%;
+    width: 60%;
     height: 150px;
     padding: 12px;
     box-sizing: border-box;

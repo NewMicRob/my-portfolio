@@ -28,9 +28,14 @@ function validateForm() {
     let lName = form["lName"].value;
     let email = form["email"].value;
     let tel = form["tel"].value;
-    if (fName === "" || lName === "" || email === "" || tel === "") {
+    if (fName === "" || lName === "") {
         alert("Please fill in the * fields");
         return false;
+    } else if(email === "") {
+        alert("Please use standard email format i.e. example@email.com");
+    return false;
+    } else if(tel === "") {
+        alert("Please enter numbers i.e. 123-123-1234");
     }
     return true;
 }

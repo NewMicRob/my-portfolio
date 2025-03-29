@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
     <!-- Header Section -->
@@ -18,33 +19,113 @@
             </ul>
         </nav>
     </header>
-
+    
     <!-- About Section -->
     <section id="about">
         <h2>About Me</h2>
         <p>My name is Michael, most people call me Mike. I am currently enrolled in the Computer Programming Course. I was born in Brampton and moved to Caledon when I was 5. I live in Caledon which is just to the North of Vaughan.
-
-
-
+            
+            
+            
             I am interested in gaming and tech in general. I spend most of my time reading books/ graphic novels (Between Two Fires and Solo Leveling), playing video games (currently playing Silent Hill 2 Remake), and watching TV shows/movies (Landman, and Alien Romulus). I have a black and white Boston terrier named Anna who is 7 years old.
             
             
             
             I went to Japan last month with my longtime girlfriend and her friends. We went for 10 days and had some amazing food/drinks(7-11 smoothies, shoyu ramen), visited some nice shrines/temples (Fushimi Inari Taisha, Todai-ji Temple, etc.) and went to 4 cities(Tokyo, Kyoto, Nara, Osaka). It was a great trip, the only downside was the 14 hr flight.</p>
     </section>
-
+    
     <!-- Projects Section -->
-    <section id="projects">
-        <h2>My Projects</h2>
-        <p>This is a placeholder for your projects. In future chapters, you’ll add real projects here.</p>
-    </section>
 
+    <section id="projects">
+    
+        <h2>My Projects</h2>
+        
+        <p>This is a placeholder for your projects. In future chapters, you’ll add real projects here.</p>
+        
+        <div class="container">
+            
+            <button class="button" type="button" id="project1" name="proj" value=""></button>
+            
+            <button class="button" type="button" id="project2" name="proj" value=""></button>
+            
+            <button class="button" type="button" id="project3" name="proj" value=""></button>
+            
+            <button class="button" type="button" id="project4" name="proj" value=""></button>
+            
+            
+            <div class="subContainer">
+                <div id="p1info" style="display:none;">
+                    <textarea readonly>This is reserved for information on project 1.</textarea>
+                </div>
+                <div id="p2info" style="display:none;">
+                    <textarea readonly> This is reserved for information on project 2.</textarea>
+                </div>
+                <div id="p3info" style="display:none;">
+                    <textarea readonly>This is reserved for information on project 3.</textarea>
+                </div>
+                <div id="p4info" style="display:none;">
+                    <textarea readonly>This is reserved for information on project 4.</textarea>
+                </div>
+            </div>
+    
+    </section>
     <!-- Contact Section -->
     <section id="contact">
+        
         <h2>Contact Me</h2>
+        
         <p>In the future, this will be a contact form. For now, just leave this as a placeholder.</p>
-    </section>
+        
+        <div class="form">
+        <form name="form" onsubmit="return validateForm()">
+            <h3>Please fill in form</h3>
+            <label for="mr">Mr.</label>
+            <input type="radio" id="honorific" name="honorific" class="checkmark">
+            
+            <label for="mrs">Mrs.</label>
+            <input type="radio" id="honorific" name="honorific" class="checkmark">
+            <br>
+            <label for="other">Other</label>
+            <input type="radio" id="honorific" name="honorific" class="checkmark">
 
+            <br>
+            <br>
+            
+            <label for="fName">*First Name:</label> 
+            <input type="text" class="text" id="fName" name="fName">
+
+            <br>
+            
+            <label for="lName">*Last Name:</label> 
+            <input type="text" class="text" id="lName" name="lName"><br>
+            
+            <br>
+            
+            <label for="email">*Email:</label>
+            <input type="email" class="text" id="email" name="email" placeholder="example@email.com"><br>
+            
+            
+
+            <label for="tel">*Phone:</label>
+            <input type="tel" class="text" name="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" id="tel" placeholder="123-123-1234">
+            
+            <br>
+            <br>
+            
+            <label for="messagebox">Message:</label>
+            <br>
+            <textarea id="message" placeholder="Your message here..."></textarea>
+
+            <br>
+            <br>
+            
+            <input class="submit" value="Submit" type="submit" id="submit">
+            <button class="reset" type="reset" id="reset">Clear</button>
+            
+        </form>
+        </div>
+    </section>
+    
     <!-- Footer Section -->
     <footer>
         <p>&copy; 2025 Michael R Newman</p>

@@ -8,19 +8,25 @@
     <script defer src="script.js"></script>
 </head>
 <body>
-    <!-- Header Section -->
-    <header>
-        <h1>Michael R Newman</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+
+    <div class="header">
+        <div id="title">
+            <h1>Michael R Newman</h1>
+        </div> 
+
+        <div id="navBar" class="navBar">
+            <a href="index.html">Main</a>
+            <a href="https://newmicrob.github.io/Lab-7-JavaScript-Events/">Project One</a>
+            <a href="https://newmicrob.github.io/accessible-registration/">Project Two</a>
+            <a href="https://newmicrob.github.io/Assignment-2-Build-a-Web-Page-Using-the-HTML5-Web-Storage-API//">Project Three</a>
+            <a href="https://newmicrob.github.io/Group-Recipe-Project/">Project Four</a>
+
+            
+            <a class="closebtn" onclick="closeNav()">&times;</a>
+        </div>
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
+    </div>
     
-    <!-- About Section -->
     <section id="about">
         <h2>About Me</h2>
         <p>My name is Michael, most people call me Mike. I am currently enrolled in the Computer Programming Course. I was born in Brampton and moved to Caledon when I was 5. I live in Caledon which is just to the North of Vaughan.
@@ -33,14 +39,10 @@
             
             I went to Japan last month with my longtime girlfriend and her friends. We went for 10 days and had some amazing food/drinks(7-11 smoothies, shoyu ramen), visited some nice shrines/temples (Fushimi Inari Taisha, Todai-ji Temple, etc.) and went to 4 cities(Tokyo, Kyoto, Nara, Osaka). It was a great trip, the only downside was the 14 hr flight.</p>
     </section>
-    
-    <!-- Projects Section -->
 
     <section id="projects">
     
         <h2>My Projects</h2>
-        
-        <p>This is a placeholder for your projects. In future chapters, you’ll add real projects here.</p>
         
         <div class="container">
             
@@ -51,82 +53,67 @@
             <button class="button" type="button" id="project3" name="proj" value=""></button>
             
             <button class="button" type="button" id="project4" name="proj" value=""></button>
-            
-            
-            <div class="subContainer">
-                <div id="p1info" style="display:none;">
-                    <textarea readonly>This is reserved for information on project 1.</textarea>
-                </div>
-                <div id="p2info" style="display:none;">
-                    <textarea readonly> This is reserved for information on project 2.</textarea>
-                </div>
-                <div id="p3info" style="display:none;">
-                    <textarea readonly>This is reserved for information on project 3.</textarea>
-                </div>
-                <div id="p4info" style="display:none;">
-                    <textarea readonly>This is reserved for information on project 4.</textarea>
-                </div>
-            </div>
-    
+
+        </div>
+
     </section>
-    <!-- Contact Section -->
+
     <section id="contact">
         
         <h2>Contact Me</h2>
-        
-        <p>In the future, this will be a contact form. For now, just leave this as a placeholder.</p>
-        
+                
         <div class="form">
-        <form name="form" onsubmit="return validateForm()">
-            <h3>Please fill in form</h3>
-            <label for="mr">Mr.</label>
-            <input type="radio" id="honorific" name="honorific" class="checkmark">
-            
-            <label for="mrs">Mrs.</label>
-            <input type="radio" id="honorific" name="honorific" class="checkmark">
-            <br>
-            <label for="other">Other</label>
-            <input type="radio" id="honorific" name="honorific" class="checkmark">
 
-            <br>
-            <br>
-            
-            <label for="fName">*First Name:</label> 
-            <input type="text" class="text" id="fName" name="fName">
+            <form name="form" onsubmit="return validateForm()">
 
-            <br>
-            
-            <label for="lName">*Last Name:</label> 
-            <input type="text" class="text" id="lName" name="lName"><br>
-            
-            <br>
-            
-            <label for="email">*Email:</label>
-            <input type="email" class="text" id="email" name="email" placeholder="example@email.com"><br>
-            
-            
+                <h3>Please fill in form</h3>
 
-            <label for="tel">*Phone:</label>
-            <input type="tel" class="text" name="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" id="tel" placeholder="123-123-1234">
-            
-            <br>
-            <br>
-            
-            <label for="messagebox">Message:</label>
-            <br>
-            <textarea id="message" placeholder="Your message here..."></textarea>
+                <div class="checkbox-container">
 
-            <br>
-            <br>
-            
-            <input class="submit" value="Submit" type="submit" id="submit">
-            <button class="reset" type="reset" id="reset">Clear</button>
-            
-        </form>
-        </div>
+                    <label for="mr">
+                        <input type="checkbox" id="mr" name="honorific"> Mr.
+                    </label>
+
+                    <label for="mrs">
+                        <input type="checkbox" id="mrs" name="honorific"> Mrs.
+                    </label>
+
+                    <label for="other">
+                        <input type="checkbox" id="other" name="honorific"> Other
+                    </label>
+
+                </div>
+        
+                <br>
+        
+                <label for="fName">*First Name:</label>
+                <input type="text" class="text" id="fName" name="fName">
+        
+                <label for="lName">*Last Name:</label>
+                <input type="text" class="text" id="lName" name="lName">
+        
+                <label for="email">Email:</label>
+                <input type="email" class="text" id="email" name="email" placeholder="example@email.com">
+        
+                <label for="tel">Phone:</label>
+                <input type="tel" class="text" name="tel" pattern="^\d{3}-\d{3}-\d{4}$" id="tel" placeholder="123-123-1234" >
+        
+                <br>
+        
+                <label for="messagebox">Message</label>
+                <textarea id="message" name="messagebox" placeholder="Your message here..."></textarea>
+        
+                <br>
+                <br>
+        
+                <div class="button-container">
+                    <input class="submit" value="Submit" type="submit" id="submit">
+                    <button class="reset" type="reset" id="reset">Clear</button>
+                </div>
+        
+            </form>
     </section>
     
-    <!-- Footer Section -->
     <footer>
         <p>&copy; 2025 Michael R Newman</p>
     </footer>

@@ -1,3 +1,8 @@
+html {
+    height: 100%;
+
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -125,6 +130,7 @@ section {
 section h2 {
     color: #333;
     text-align: center;
+    text-decoration: underline;
 }
 
 /* Media Queries for Mobile Devices */
@@ -440,16 +446,16 @@ input[type="checkbox"] {
 }
 
 .dark-mode {
-    background-color: black;
+    background-color: rgb(40, 62, 60);
 }
 
 .dark-mode section {
-    background-color: #333;
+    background-color: #444444;
     color: white;
 }
 
 .dark-mode .navBar {
-    background-color: #868686;
+    background-color: rgb(40, 62, 60);
     color: white;
 }
 
@@ -516,7 +522,6 @@ input[type="checkbox"] {
     z-index: 1000;
     transition: transform 0.2s ease box-shadow 0.2s ease;
     font-weight: bolder;
-    
 }
 
 #lightSwitch:hover {
@@ -524,6 +529,7 @@ input[type="checkbox"] {
     color: #fff;
     transition-duration: 0.4s;
     content: "Off";
+    text-decoration: underline;
 }
 
 #lightSwitch:active {
@@ -572,11 +578,24 @@ input[type="checkbox"] {
 }
 
 .dark-mode #lightSwitch:hover::before {
-    content: "Off";
-    color: #fff;
+    content: "On";
+    color: #333;
+    text-decoration: underline;
 }
 
 .dark-mode #lightSwitch:active::before {
     content: "Off";
     color: #fff;
+}
+
+.dark-mode .header {
+    color: rgb(57, 218, 3);
+}
+
+.dark-mode h1 {
+    color: rgb(57, 218, 3);
+}
+
+.dark-mode .footer {
+    color: rgb(57, 218, 3);
 }

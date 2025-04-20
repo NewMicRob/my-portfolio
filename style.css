@@ -1,12 +1,12 @@
-html, body {
+body {
     display: flex;
     flex-direction: column;
     background-color: rgb(241, 247, 237);
     margin: 0;
     width: 100%;
     height: 100%;
-    margin-top: auto;
 }
+
 
 main {
     flex: 1;
@@ -84,8 +84,7 @@ div.header {
 .openbtn {
     position: absolute;
     left: 40px;
-    top: 50%;
-    transform: translateY(-50%);
+    transition: transform 0.2s ease box-shadow 0.2s ease;
     font-size: 40px;
     cursor: pointer;
     background-color: rgb(57, 218, 3);
@@ -94,8 +93,16 @@ div.header {
     border: none;
 }
 
+.openbtn:active {
+    transform: translateY(6px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
 .openbtn:hover {
-    background-color: rgba(70, 218, 3, 0.645);
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+    transition-duration: 0.4s;
 }
 
 footer {
@@ -119,6 +126,7 @@ section h2 {
     color: #333;
     text-align: center;
 }
+
 /* Media Queries for Mobile Devices */
 @media only screen and (max-width: 600px) {
     header, footer {
@@ -143,24 +151,24 @@ section h2 {
     padding: auto;
     justify-content: space-between;
     position: relative;
-    }
+}
 
-    .subContainer{
-        position: absolute;
-        display: inline-block;
-        text-align: center;
-        justify-content: space-between;
-        top: 100%;
-        min-width: 100%;
-        background-color: white;
-        border-radius: 5px;
-    }
+.subContainer{
+    position: absolute;
+    display: inline-block;
+    text-align: center;
+    justify-content: space-between;
+    top: 100%;
+    min-width: 100%;
+    background-color: white;
+    border-radius: 5px;
+}
 
 /*Button for project1*/
 #project1.button {
-    background-color: white;
+    color: #333;
+    background-color: rgb(241, 247, 237);
     border: 1px solid #333;
-    color: black;
     padding: 15px;
     display: inline-block;
     text-align: center;
@@ -180,13 +188,14 @@ section h2 {
 }
 
 #project1.button:active {
-    box-shadow: 3px 3px 3px black ;
-    transform: translateY(4px);
+    transform: translateY(6px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 #project1.button::after {
     content: "Project One";
     text-decoration: underline;
+    color: #333;
 }
 
 #project1.button:hover::after {
@@ -196,9 +205,9 @@ section h2 {
 
 /*Button for project2*/
 #project2.button {
-    background-color: white;
+    color: #333;
+    background-color: rgb(241, 247, 237);
     border: 1px solid #333;
-    color: black;
     padding: 15px;
     display: inline-block;
     text-align: center;
@@ -218,13 +227,14 @@ section h2 {
 }
 
 #project2.button:active {
-    box-shadow: 3px 3px 3px black ;
-    transform: translateY(4px);
+    transform: translateY(6px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 #project2.button::after {
     content: "Project Two";
     text-decoration: underline;
+    color: #333;
 }
 
 #project2.button:hover::after {
@@ -234,9 +244,9 @@ section h2 {
 
 /*Button for project3*/
 #project3.button {
-    background-color: white;
+    color: #333;
+    background-color: rgb(241, 247, 237);
     border: 1px solid #333;
-    color: black;
     padding: 15px;
     display: inline-block;
     text-align: center;
@@ -256,13 +266,14 @@ section h2 {
 }
 
 #project3.button:active {
-    box-shadow: 3px 3px 3px black;
-    transform: translateY(4px);
+    transform: translateY(6px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 #project3.button::after {
     content: "Project Three";
     text-decoration: underline;
+    color: #333;
 }
 
 #project3.button:hover::after {
@@ -272,9 +283,9 @@ section h2 {
 
 /*Button 4 project4*/
 #project4.button {
-    background-color: white;
+    color: #333;
+    background-color: rgb(241, 247, 237);
     border: 1px solid #333;
-    color: black;
     padding: 15px;
     display: inline-block;
     text-align: center;
@@ -294,13 +305,14 @@ section h2 {
 }
 
 #project4.button:active {
-    box-shadow: 3px 3px 5px black;
-    transform: translateY(4px);
+    transform: translateY(6px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 #project4.button::after {
     content: "Project Four";
     text-decoration: underline;
+    color: #333;
 }
 
 #project4.button:hover::after {
@@ -425,4 +437,146 @@ input[type="checkbox"] {
     height: 15px;
     margin-right: 5px;
     accent-color: rgb(57, 218, 3);
+}
+
+.dark-mode {
+    background-color: black;
+}
+
+.dark-mode section {
+    background-color: #333;
+    color: white;
+}
+
+.dark-mode .navBar {
+    background-color: #868686;
+    color: white;
+}
+
+.dark-mode .navBar a {
+    color: white;
+}
+
+.dark-mode .navBar a:hover {
+    color: rgb(57, 218, 3);
+}
+
+.dark-mode footer {
+    background-color: #333;
+    color: white;
+}
+
+.dark-mode .header {
+    background-color: #333;
+    color: white;
+}
+
+.dark-mode h1 {
+    color: #fff;
+}
+
+.dark-mode h2 {
+    color: #fff;
+}
+
+.dark-mode button {
+    background-color: #333;
+    color: white;
+    border: none;
+}
+
+.dark-mode button:hover {
+    background-color: rgb(57, 218, 3);
+    color: #333;
+}
+
+.dark-mode button:active {
+    transform: translateY(6px);
+}
+
+.dark-mode .button::after {
+    color: white;
+}
+
+.dark-mode .button:hover::after {
+    color: white;
+}
+
+#lightSwitch {
+    position: absolute;
+    background-color: rgb(57, 218, 3);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    top: 40px;
+    right: 60px;
+    z-index: 1000;
+    transition: transform 0.2s ease box-shadow 0.2s ease;
+    font-weight: bolder;
+    
+}
+
+#lightSwitch:hover {
+    background-color: #333;
+    color: #fff;
+    transition-duration: 0.4s;
+    content: "Off";
+}
+
+#lightSwitch:active {
+    transform: translateY(6px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    content: "Off";
+}
+
+.dark-mode #lightSwitch {
+    background-color: #333;
+    color: #fff;
+    content: "On";
+}
+
+.dark-mode #lightSwitch:hover {
+    background-color: rgb(57, 218, 3);
+    color: #333;
+    transition-duration: 0.4s;
+    content:"Off"
+}
+
+.dark-mode #lightSwitch:active {
+    transform: translateY(6px);
+    box-shadow: 0 2px 5px rgba(115, 115, 115, 0.2);
+    content: "Off";
+}
+
+.dark-mode form {
+    color: #333;
+    background-color: rgb(241, 247, 237);
+}
+
+#lightSwitch::before {
+    content: "On";
+    color: #333;
+}
+
+#lightSwitch:hover::before {
+    content: "Off";
+    color: #fff;
+}
+
+.dark-mode #lightSwitch::before {
+    content: "Off";
+    color: #fff;
+}
+
+.dark-mode #lightSwitch:hover::before {
+    content: "Off";
+    color: #fff;
+}
+
+.dark-mode #lightSwitch:active::before {
+    content: "Off";
+    color: #fff;
 }

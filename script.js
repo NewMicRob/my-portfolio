@@ -64,3 +64,8 @@ function openNav() {
 function closeNav() {
     document.getElementById('navBar').style.width = "0";
 }
+
+function toggleSwitch() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+}

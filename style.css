@@ -125,7 +125,7 @@ section h2 {
         padding: 10px;
     }
 
-    nav ul li {
+    .navbar{
         display: block;
         text-align: center;
         margin: 5px 0;

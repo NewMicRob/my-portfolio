@@ -30,92 +30,86 @@
 
 
     <section id="about">
-        <h2>About Me</h2>
-        <p>
-            My name is Michael, most people call me Mike. I am still enrolled in the Computer Programming program at Humber Polytechnica. I was born in Brampton and moved to Caledon when I was 5. I live in Caledon which is just to the North of Vaughan.
-            
-            
-            
-            I am interested in gaming and tech in general. I spend most of my time reading books/ graphic novels (Between Two Fires and Solo Leveling), playing video games (currently playing Silent Hill 2 Remake), and watching TV shows/movies (Landman, and Alien Romulus). I have a black and white Boston terrier named Anna who is 7 years old.
-            
-            
-            
-            I went to Japan last month with my longtime girlfriend and her friends. We went for 10 days and had some amazing food/drinks(7-11 smoothies, shoyu ramen), visited some nice shrines/temples (Fushimi Inari Taisha, Todai-ji Temple, etc.) and went to 4 cities(Tokyo, Kyoto, Nara, Osaka). It was a great trip, the only downside was the 14 hr flight.
-        </p>
+        <div id="about-container">
+            <fieldset>
+            <h2>About Me</h2>
+            <p>
+                My name is Michael, most people call me Mike. I am currently at the end of my first semester in the computer programming course at Humber polytechnic. I was born in Brampton ON and later moved to Caledon ON. I have gained quite a few skills (link the skills section) throughout the past 4 months and am looking forward to learning more. I continue to enjoy gaming and tech in general. I don’t read books as often anymore; lately I find myself reading webMD(link webMD), and fellow creators GitRepos to further my understanding of what the possibilities of websites are and how to implement features. 
+            </p>
+        </fieldset>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="skills-container">
+            <fieldset>
+                <h2>My Skills</h2>
+                <p>
+                    HTML: HTML5, HTML Forms, HTML Attributes, HTML Elements, HTML Tags.
+                    <br>
+                    JavaScript: JavaScript ES6, JavaScript Functions, JavaScript Variables, JavaScript Data Types, JavaScript Operators, JavaScript Arrays, JavaScript Objects, JavaScript Loops, JavaScript Conditionals, JavaScript Events, JavaScript DOM Manipulation, JavaScript JSON.
+                    <br>
+                    CSS: CSS Flexbox, CSS Grid, CSS Selectors, CSS Variables, CSS Transitions, CSS Responsive Design, CSS Box Model, CSS Positioning, CSS Backgrounds, CSS Fonts, CSS Colors, CSS Borders, CSS Shadows, CSS Transformations, CSS Transitions.
+                    <br>
+                    GitHub: GitHub Repositories, GitHub Pages, GitHub Pull Requests, GitHub Branches, GitHub Commits, GitHub Merges,GitHub Cloning, GitHub Collaboration.
+                    <br>
+                    Alogrithms: Searching Algorithms, Sorting Algorithms, Recursion, modular programming, Object-oriented programming.
+                    <br>
+                    Linux: Linux Commands, Linux File System, Linux Shell Scripting, Linux Permissions.
+                </p>
+            </fieldset>
+        </div>
     </section>
 
     <section id="projects">
-    
+        <fieldset>
         <h2>My Projects</h2>
-        
-        <div class="container">
-            
-            <button class="button" type="button" id="project1" name="proj" value=""></button>
-            
-            <button class="button" type="button" id="project2" name="proj" value=""></button>
-            
-            <button class="button" type="button" id="project3" name="proj" value=""></button>
-            
-            <button class="button" type="button" id="project4" name="proj" value=""></button>
-
+        <div class="projects-container">
+            <button class="projBtn" type="button" id="project1" name="proj"></button>
+            <button class="projBtn" type="button" id="project2" name="proj"></button>
+            <button class="projBtn" type="button" id="project3" name="proj"></button>
+            <button class="projBtn" type="button" id="project4" name="proj"></button>
         </div>
-
+    </fieldset>
     </section>
 
     <section id="contact">
-        
+        <fieldset>
         <h2>Contact Me</h2>
-                
         <div class="form">
-
             <form name="form" onsubmit="return validateForm()">
-
                 <div class="checkbox-container">
-
                     <label for="mr">
                         <input type="checkbox" id="mr" name="honorific"> Mr.
                     </label>
-
                     <label for="mrs">
                         <input type="checkbox" id="mrs" name="honorific"> Mrs.
                     </label>
-
                     <label for="other">
                         <input type="checkbox" id="other" name="honorific"> Other
                     </label>
-
                 </div>
-        
                 <br>
-        
                 <label for="fName">*First Name:</label>
                 <input type="text" class="text" id="fName" name="fName">
-        
                 <label for="lName">*Last Name:</label>
                 <input type="text" class="text" id="lName" name="lName">
-        
-                <label for="email">Email:</label>
+                <label for="email">*Email:</label>
                 <input type="email" class="text" id="email" name="email" placeholder="example@email.com">
-        
-                <label for="tel">Phone:</label>
+                <label for="tel">*Phone:</label>
                 <input type="tel" class="text" name="tel" pattern="^\d{3}-\d{3}-\d{4}$" id="tel" placeholder="123-123-1234" >
-        
                 <br>
-        
                 <label for="messagebox">Message</label>
                 <textarea id="message" name="messagebox" placeholder="Your message here..."></textarea>
-        
                 <br>
                 <br>
-        
                 <div class="button-container">
                     <input class="submit" value="Submit" type="submit" id="submit">
                     <button class="reset" type="reset" id="reset">Clear</button>
                 </div>
-        
+                </fieldset>
             </form>
     </section>
-    
     <footer class="footer">
         <p>&copy; 2025</p>
         <a href="//my-portfolio-3lw.pages.dev/">Michael R Newman</a>

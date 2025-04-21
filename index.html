@@ -6,6 +6,10 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
+    <meta property="og:title" content="JavaScript Events"> 
+    <meta property="og:image" content=""> 
+    <meta property="og:url" content="https://newmicrob.github.io/Lab-7-JavaScript-Events/"> 
+    <meta property="og:type" content="website"> 
 </head>
 <body>
 
@@ -16,10 +20,10 @@
 
         <div id="navBar" class="navBar">
             <a href="https://my-portfolio-3lw.pages.dev/">Portfolio</a>
-            <a href="https://newmicrob.github.io/Lab-7-JavaScript-Events/">Project One</a>
-            <a href="https://newmicrob.github.io/accessible-registration/">Project Two</a>
-            <a href="https://newmicrob.github.io/Assignment-2-Build-a-Web-Page-Using-the-HTML5-Web-Storage-API//">Project Three</a>
-            <a href="https://newmicrob.github.io/Group-Recipe-Project/">Project Four</a>
+            <a href="https://newmicrob.github.io/Lab-7-JavaScript-Events/">JavaScript Events</a>
+            <a href="https://newmicrob.github.io/accessible-registration/">Registration Form</a>
+            <a href="https://newmicrob.github.io/Assignment-2-Build-a-Web-Page-Using-the-HTML5-Web-Storage-API//">Web Storage API</a>
+            <a href="https://newmicrob.github.io/Group-Recipe-Project/">Group Project</a>
             <a class="closebtn" onclick="closeNav()">&times;</a>
         </div>
         <button class="openbtn" onclick="openNav()">&#9776;</button>
@@ -31,50 +35,111 @@
 
     <section id="about">
         <div id="about-container">
-            <fieldset>
             <h2>About Me</h2>
             <p>
-                My name is Michael, most people call me Mike. I am currently at the end of my first semester in the computer programming course at Humber polytechnic. I was born in Brampton ON and later moved to Caledon ON. I have gained quite a few skills (link the skills section) throughout the past 4 months and am looking forward to learning more. I continue to enjoy gaming and tech in general. I don’t read books as often anymore; lately I find myself reading webMD(link webMD), and fellow creators GitRepos to further my understanding of what the possibilities of websites are and how to implement features. 
+                My name is Michael, most people call me Mike. I am currently at the end of my first semester in the computer programming course at Humber polytechnic. I was born in Brampton ON and later moved to Caledon ON. I have gained quite a few skills throughout the past 4 months and am looking forward to learning more. I continue to enjoy gaming and tech in general. I don’t read books as often anymore; lately I find myself reading <a id="reference1" href="https://developer.mozilla.org/en-US/">MDN</a>, <a id="reference2" href="https://www.w3schools.com/">w3schools</a> and fellow creators GitRepos to further my understanding of what the possibilities of websites are and how to implement features. 
             </p>
-        </fieldset>
         </div>
     </section>
 
     <section id="skills">
+        <h2>My Skills</h2>
         <div class="skills-container">
-            <fieldset>
-                <h2>My Skills</h2>
-                <p>
-                    HTML: HTML5, HTML Forms, HTML Attributes, HTML Elements, HTML Tags.
-                    <br>
-                    JavaScript: JavaScript ES6, JavaScript Functions, JavaScript Variables, JavaScript Data Types, JavaScript Operators, JavaScript Arrays, JavaScript Objects, JavaScript Loops, JavaScript Conditionals, JavaScript Events, JavaScript DOM Manipulation, JavaScript JSON.
-                    <br>
-                    CSS: CSS Flexbox, CSS Grid, CSS Selectors, CSS Variables, CSS Transitions, CSS Responsive Design, CSS Box Model, CSS Positioning, CSS Backgrounds, CSS Fonts, CSS Colors, CSS Borders, CSS Shadows, CSS Transformations, CSS Transitions.
-                    <br>
-                    GitHub: GitHub Repositories, GitHub Pages, GitHub Pull Requests, GitHub Branches, GitHub Commits, GitHub Merges,GitHub Cloning, GitHub Collaboration.
-                    <br>
-                    Alogrithms: Searching Algorithms, Sorting Algorithms, Recursion, modular programming, Object-oriented programming.
-                    <br>
-                    Linux: Linux Commands, Linux File System, Linux Shell Scripting, Linux Permissions.
-                </p>
-            </fieldset>
+            <ul id="html"><h3>HTML</h3>
+                <li>HTML5</li>
+                <li>Forms</li>
+                <li>Elements</li>
+                <li>Tags</li>
+                <li>Attributes</li>
+                <li>Elements</li>
+            </ul>
+            <ul id="javascript"><h3>JavaScript</h3>
+                <li>Basics</li>
+                <li>Functions</li>
+                <li>Variables</li>
+                <li>Data Types</li>
+                <li>Operators</li>
+                <li>Arrays</li>
+                <li>Objects</li>
+                <li>Loops</li>
+                <li>Conditionals</li>
+                <li>Events</li>
+                <li>DOM Manipulation</li>
+                <li>JSON</li>
+                <li>Fetch API</li>
+                <li>Promises</li>
+                <li>Async/Await</li>
+                <li>Error Handling</li>
+            </ul>
+            <ul id="css"><h3>CSS</h3>
+                <li>Flex</li>
+                <li>Grid</li>
+                <li>Selectors</li>
+                <li>Classes</li>
+                <li>Transitions</li>
+                <li>Responsive Design</li>
+                <li>Box Model</li>
+                <li>Positioning</li>
+                <li>Backgrounds</li>
+                <li>Fonts</li>
+                <li>Colours</li>
+                <li>Borders</li>
+                <li>Shadows</li>
+                <li>Transformations</li>
+                <li>Transitions</li>
+            </ul>
+            <ul id="github"><h3>GitHub</h3>
+                <li>Repositories</li>
+                <li>Pages</li>
+                <li>Pull Requests</li>
+                <li>Branches</li>
+                <li>Commits</li>
+                <li>Merges</li>
+                <li>Cloning</li>
+                <li>Collaboration</li>
+            </ul>
+            <ul id="algo"><h3>Algorithms</h3>
+                <li>Searching Algorithms</li>
+                <li>Sorting Algorithms</li>
+                <li>Recursion</li> 
+                <li>Flowcharts</li>
+                <li>Pseudocode</li>
+                <li>Modular Programming</li>
+                <li>Object-Oriented Programming</li>
+                <li>Data Structures</li>
+            </ul>
+            <ul id="linux"><h3>Linux</h3>
+                <li>Commands</li>
+                <li>File System</li>
+                <li>Shell Scripting</li>
+                <li>Permissions</li>
+            </ul>
+            <ul id="other"><h3>Other Skills</h3>
+                <li>UML Class Diagrams</li>
+                <li>Problem Solving</li>
+                <li>Critical Thinking</li>
+                <li>Communication</li>
+                <li>Adaptability</li>
+                <li>Attention to Detail</li>
+                <li>Creativity</li>
+                <li>Research</li>
+            </ul>
         </div>
     </section>
 
     <section id="projects">
-        <fieldset>
         <h2>My Projects</h2>
         <div class="projects-container">
-            <button class="projBtn" type="button" id="project1" name="proj"></button>
-            <button class="projBtn" type="button" id="project2" name="proj"></button>
-            <button class="projBtn" type="button" id="project3" name="proj"></button>
-            <button class="projBtn" type="button" id="project4" name="proj"></button>
+            <button class="projBtn" type="button" id="project1" name="proj" ondblclick="dblclick()"></button>
+            <button class="projBtn" type="button" id="project2" name="proj" ondblclick="dblclick()"></button>
+            <button class="projBtn" type="button" id="project3" name="proj" ondblclick="dblclick()"></button>
+            <button class="projBtn" type="button" id="project4" name="proj" ondblclick="dblclick()"></button>
         </div>
-    </fieldset>
+        <div id="projectDetails" class="hidden">
+        </div>
     </section>
 
     <section id="contact">
-        <fieldset>
         <h2>Contact Me</h2>
         <div class="form">
             <form name="form" onsubmit="return validateForm()">
@@ -107,7 +172,6 @@
                     <input class="submit" value="Submit" type="submit" id="submit">
                     <button class="reset" type="reset" id="reset">Clear</button>
                 </div>
-                </fieldset>
             </form>
     </section>
     <footer class="footer">
